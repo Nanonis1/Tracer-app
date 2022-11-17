@@ -61,22 +61,22 @@ h1, h2, h3 , h4, h5, h6 {
   /* Jumbotron  */
   
   .jumbotron {
-   background-color: black;
-   background-image: radial-gradient(#444444, #000000, #000000);
-    height: 100px;
-    height: calc(100vh - 15px);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    background-color: black;
+    background-image: radial-gradient(#444444, #000000, #000000);
+     height: 100px;
+     height: calc(100vh - 15px);
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
   }
   
   /* Jumbotron copy */
   .jumboCopy {
-    width: 50%;
-    color: white;
-    text-align: left;
-    padding-left: 0px;
-    
+  
+      width: 50%;
+      color: white;
+      text-align: center;
+      padding-left: 0px;
   }
 
   .display-4{
@@ -84,18 +84,20 @@ h1, h2, h3 , h4, h5, h6 {
     font-weight: 500;
     font-size: 62px;
     font-family: urbanist;
+  
+    
   }
 
   .lead{
     font-size: 36px;
     font-family: urbanist;
+  
   }
 
   .btn{
     color: #BED33B;
     font-weight: 500;
     background-color: #dddddd3e;
-    
     font-size: 20px;
     
     
