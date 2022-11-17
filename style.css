@@ -72,7 +72,7 @@ h1, h2, h3 , h4, h5, h6 {
   
   /* Jumbotron copy */
   .jumboCopy {
-    width: 30%;
+    width: 50%;
     color: white;
     text-align: left;
     padding-left: 0px;
@@ -82,7 +82,7 @@ h1, h2, h3 , h4, h5, h6 {
   .display-4{
     color: #BED33B;
     font-weight: 500;
-    font-size: 56px;
+    font-size: 62px;
     font-family: urbanist;
   }
 
