@@ -119,67 +119,232 @@ h1, h2, h3 , h4, h5, h6 {
         font-weight: lighter;
         padding-bottom: 10px;
     }
+
+    .title: 
     
 
+/* Features */
 
-  /* Cards */
-  .content {
-    padding: 50px;
-  }
-  .sectionHeading {
-    text-align: center;
-  }
-  .showsNear  {
-    padding: 0px 30px 30px 30px;
-  }
-  .cardContainer {
-    text-align: center;
-  }
+
+    #heroGrid {
+      margin: 0px 5%;
+      display: grid;
+      min-height: 500px;
+      height: 70vh;
+      grid-template-rows: 75% 25%;
+      grid-template-columns: 75% 25%;
+      grid-template-areas:
+      "featuredProduct secondaryProduct"
+      "featuredProduct CTA";
+    }
+    #headline {
+      background-color: rgba(255,255,255,0.8);
+      border-bottom: 5px solid #BED33B;
+      position: absolute;
+      right: -50px;
+      top: 100px;
+      padding: 25px;
+      max-width: 550px;
+      z-index: 100;
+    }
+    
+    .heroGridArea {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      align-items: center;
+      display: flex;
+      position: relative;
+     
+    }
+    
+    /* Category Grid CSS */
+    
+    .subHeading {
+      text-align: center;
+      border-bottom: 2px solid black;
+      width: 300px;
+      margin: 50px auto;
+      color: #BED33B;
+    }
+    
+    #categoryGrid {
+      margin: 0px 5%;
+      display: grid;
+      grid-template-rows: 300px 300px 300px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas:
+      "bookcases bedroom patio"
+      "couches couches patio"
+      "desks desks desks"
+      ;
+    }
+    
+    #bookcases {
+      grid-area: bookcases;
+      background-image: url("../images/bookcases@2x.png");
+    
+    }
+    #bedroom {
+      grid-area: bedroom;
+      background-image: url("../images/beds@2x.png");
+    }
+    
+    #couches {
+      grid-area: couches;
+      background-image: url("../images/couch@2x.png");
+    }
+    
+    #patio {
+      grid-area: patio;
+      background-image: url("../images/patio@2x.png");
+    }
+    
+    #desks {
+      grid-area: desks;
+      background-image: url("../images/desks@2x.png");
+    }
+    
+    .categoryGridArea {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 5px;
+      cursor: pointer;
+      display: grid;
+      align-content: end;
+    }
+    
+    .heading {
+      background-color: rgba(0,0,0,0.7);
+      padding: 15px;
+      height: 25px;
+      color: BED33B;
+      font-size: 18px;
+      border-bottom: 5px solid #BED33B;
+    }
+    #navBar {
+      display: flex;
+      flex-direction: row;
+      margin: 0px 15%;
+      
+      
+    }
+
+#navBar{
+  grid: gap 50px;px;
+}
+   
+#navBar h1{
+  width: 25%;
+  font-weight: 600;
+  color: #BED33B;
+  font-family: urbanist;
+  display: center;
+}
+
+.card-title{
+  font-family: urbanist;
+  color: #BED33B;
+}
+.card-text{
+  font-family: urbanist;
+}
+
+      .card{
+        width: 400px;
+      }
+    
+    .card-img-top{
+      height: 600px;
+      
+    }
+    #navigation {
+      display: flex;
+      width: 50%;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    #navigation p {
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .icons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 25%;
+    }
+    .icons img {
+      margin: 15px;
+      cursor: pointer;
+    }
+    .highlight {
+      color: #BED33B;
+      font-weight: 700;
+    }
+    
+    /* Typography CSS */
+    
+    h2 {
+      font-size: 60px;
+      margin: 0px 0px;
+      color: #080805;
+    }
+    
+    h3 {
+      font-size: 32px;
+      font-weight: 300;
+      margin: 0px 0px;
+    }
+    
+    h4 {
+      color: white;
+      font-weight: 400;
+      font-size: 22px;
+    }
+    
+    
+    #headline p {
+      max-width: 350px;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0px 0px;
+      color: #636364;
+    }
+    
+    @media only screen and (max-width: 1000px) {
+      #navigation {
+        display: none;
+      }
+      .icons {
+        margin-left: auto;
+      }
+    }
+    
+    @media only screen and (max-width: 600px) {
+      #headline {
+        position: static;
+        margin: 20px;
+      }
+      #heroGrid {
+        grid-template-areas:
+        "featuredProduct featuredProduct"
+        "secondaryProduct CTA";
+      }
+      #categoryGrid {
+        grid-template-rows: 300px 300px 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          "bookcases"
+          "bedroom"
+          "patio"
+          "couches"
+          "desks"
+
+      }
+    }
   
-  /* Content */
-  .sideAccent {
-    background: #007bff;
-    width: 15px;
-  }
-  .imageContainer img {
-    width: 100%;
-  }
-  .imageContainer {
-    padding: 50px;
-  }
-  .valueProp {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  
-  /* Footer */
-  .emailContain {
-    background: url(images/emailBG.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 500px;
-  }
-  
-  /* Footer form */
-  form {
-    width: 500px;
-    margin: 35px auto;
-    padding: 45px;
-    border: 1px solid #F2F2F2;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 0 40px rgba(0, 0, 0, 0.1);
-    background-color: white;
-  }
-  
-  /* STYLES FOR TEMPLATE PLEASE DO NOT TOUCH*/
-  .dropdown-menu {
-    left: -97px;
-  }
   footer {
     position: absolute;
     width: 100%;
@@ -187,11 +352,34 @@ h1, h2, h3 , h4, h5, h6 {
     line-height: 60px;
     background-color: #f5f5f5;
     margin-top: 50px;
+  display: inline-block;
+    
   }
-  .cardContainer {
-    margin-top: 20px;
+
+  .emailContain h3{
+    background-color: #000000;
+    text-align: center;
+    color: #BED33B;
+    font-family: urbanist;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+   
   }
-  .card {
-    margin: 0 auto;
+
+  .form-group{
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    font-family: urbanist;
+    font-weight: lighter;
   }
-  
+
+  .btn {
+    color: #BED33B;
+    background-color: #636364;
+    stroke: none;
+    text-align: center;
+    
+  }
+
